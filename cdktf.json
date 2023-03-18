@@ -1,0 +1,19 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node src/main.ts",
+  "projectId": "0b902edb-f827-45b8-b219-d7d2045c93b2",
+  "sendCrashReports": "false",
+  "terraformProviders": [
+    "aws@~> 4.10"
+  ],
+  "terraformModules": [
+    "terraform-aws-modules/vpc/aws@ ~> 3.19.0",
+    "cloudposse/rds/aws@ ~> 0.41.0",
+    "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.13.0",
+    "github.com/aws-ia/terraform-aws-eks-blueprints//modules/kubernetes-addons?ref=v4.13.0"
+  ],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
